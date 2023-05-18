@@ -1,7 +1,9 @@
 # c_cpp-advance
 #bài 1 : học về compiler trong gcc với cú pháp : gcc- E main.c -o main.i
 có thể thay thế main.i= main.h sẽ ra file của h
+
 #bài 2 : học về tiền xử lý ( macro) có thể dùng macro như các hàm để chương trình chạy nhanh hơn
+
 #bài 3 : học về cách nhập các dữ liệu và tính mà không cho trước các dữ liệu cụ thể
 ta dùng thư viện stdrag
 Header file có tên stdarg.h trong Thư viện C định nghĩa một kiểu biến va_list và 3 macro mà có thể được sử dụng để lấy các tham số trong một hàm khi số tham số là chưa được biết (ví dụ như số tham số là có thể biến đổi).
@@ -10,6 +12,8 @@ Các biến được định nghĩa trong stdarg.h
 Sau đây là kiểu biến được định nghĩa trong stdarg.h:
 
 va_list: Đây là một kiểu phù hợp để lưu trữ thông tin cần thiết bởi ba macro là va_start(), va_arg() và va_end().
+
+
 #bài 4 : học về hàm
 Biến cục bộ bình thường: sau khi gọi thì biến khởi tạo giá trị biến và sẽ thu hồi địa chỉ trên bộ nhớ Ram khi chương trình kết thúc khỏi biến đó, lần thứ hai gọi biến thì chương trình sẽ khởi tạo lại giá trị biến từ đầu và có thể giống hoặc không địa chỉ trên bộ nhớ so với lần gọi đầu.
 
