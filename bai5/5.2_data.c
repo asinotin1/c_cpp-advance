@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 // biến data có thể đọc và sửa giá trị được
-
+// Chứa biến toàn cục or biến static với giá trị khởi tạo khác không
 const uint8_t temp = 15; //bien toan cuc
 
 static uint8_t test = 21;  //bien static toan cuc khoi tao vơi gia tri khac 0
