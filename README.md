@@ -53,3 +53,5 @@ vì Register có bộ nhớ giới hạn nên chỉ ưu tiên dùng Register cho
 Trong lập trình nhúng (Embedded System), ta rất thường hay gặp khai báo biến với từ khóa volatile. Việc khai báo biến volatile là rất cần thiết để tránh những lỗi sai khó phát hiện do tính năng optimization của compiler.
 
 Thông báo cho compiler không tối ưu hàm đã được khởi tạo sẵn( sử dụng giá trị đã được khởi tạo từ trước)
+
+# bài 5: phân vùng nhớ
