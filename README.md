@@ -47,6 +47,9 @@ ALU(bộ xử lý tính toán), Register(thanh ghi), RAM (cấu trúc vi xử l�
                                               
     RAM(nhận kết quả từ Register) <- Register(nhận kết quả từ ALU) <-
 vì Register có bộ nhớ giới hạn nên chỉ ưu tiên dùng Register cho những biến cần tốc độ xử lý cao, còn lại tất cả được lưu trên RAM.
+
 //4.5 volatile
+
 Trong lập trình nhúng (Embedded System), ta rất thường hay gặp khai báo biến với từ khóa volatile. Việc khai báo biến volatile là rất cần thiết để tránh những lỗi sai khó phát hiện do tính năng optimization của compiler.
+
 Thông báo cho compiler không tối ưu hàm đã được khởi tạo sẵn( sử dụng giá trị đã được khởi tạo từ trước)
