@@ -55,3 +55,28 @@ Trong lập trình nhúng (Embedded System), ta rất thường hay gặp khai b
 Thông báo cho compiler không tối ưu hàm đã được khởi tạo sẵn( sử dụng giá trị đã được khởi tạo từ trước)
 
 # bài 5: phân vùng nhớ
+
+•	Text :
+– Quyền truy cập chỉ Read và nó chưa lệnh để thực thi nên tránh sửa đổi instruction.
+– Chứa khai báo hằng số trong chương trình (.rodata)
+•	Data:
+
+– Quyền truy cập là read-write.
+– Chứa biến toàn cục or biến static với giá trị khởi tạo khác không.
+– Được giải phóng khi kết thúc chương trình.
+•	Bss:
+
+– Quyền truy cập là read-write.
+– Chứa biến toàn cục or biến static với giá trị khởi tạo bằng không or không khởi tạo.
+– Được giải phóng khi kết thúc chương trình.
+•	Stack:
+
+– Quyền truy cập là read-write.
+– Được sử dụng cấp phát cho biến local, input parameter của hàm,…
+– Sẽ được giải phóng khi ra khỏi block code/hàm
+•	Heap:
+
+– Quyền truy cập là read-write.
+– Được sử dụng để cấp phát bộ nhớ động như: Malloc, Calloc, …
+– Sẽ được giải phóng khi gọi hàm free,…
+
