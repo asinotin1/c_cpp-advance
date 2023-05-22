@@ -64,18 +64,18 @@ Thông báo cho compiler không tối ưu hàm đã được khởi tạo sẵn(
 – Quyền truy cập là read-write.
 – Chứa biến toàn cục or biến static với giá trị khởi tạo khác không.
 – Được giải phóng khi kết thúc chương trình.
-•	Bss:
 
+•	Bss:
 – Quyền truy cập là read-write.
 – Chứa biến toàn cục or biến static với giá trị khởi tạo bằng không or không khởi tạo.
 – Được giải phóng khi kết thúc chương trình.
-•	Stack:
 
+•	Stack:
 – Quyền truy cập là read-write.
 – Được sử dụng cấp phát cho biến local, input parameter của hàm,…
 – Sẽ được giải phóng khi ra khỏi block code/hàm
-•	Heap:
 
+•	Heap:
 – Quyền truy cập là read-write.
 – Được sử dụng để cấp phát bộ nhớ động như: Malloc, Calloc, …
 – Sẽ được giải phóng khi gọi hàm free,…
