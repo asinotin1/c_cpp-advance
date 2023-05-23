@@ -81,12 +81,20 @@ Thông báo cho compiler không tối ưu hàm đã được khởi tạo sẵn(
 – Sẽ được giải phóng khi gọi hàm free,…
 # bài 6: 
 .struct:
+
 int8_t 		1 byte signed		-128 to 127
+
 uint8_t		1 byte unsigned		0 to 255
+
 int16_t		2 bytes signed		-32768 to 32767
+
 uint16_t	2 bytes unsigned	0 to 65535
+
 int32_t		4 bytes signed		-2147483648 to 2147483647
+
 uint32_t	4 bytes unsigned	0 to 4294967295
+
 int64_t		8 bytes signed		-9223372036854775808 to 9223372036854775807
+
 uint64_t	8 bytes unsigned	0 to 18446744073709551615
 
