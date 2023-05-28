@@ -255,5 +255,20 @@ do đó kết quả cuối cùng là: 0 0 2 0 4
         + là kiểu dữ liệu do người dùng tự định nghĩa;
         + Kích thước của union sẽ là kích thước của member lớn nhất;
         + Các member trong Union đều dùng chung một địa chỉ nên khi thay đổi một giá trị member thì sẽ ảnh hưởng đến giá trị các member khác
+        
+#bai 7
+
+biến : jmp_buf.
+Đây là một kiểu mảng được sử dụng để giữ thông tin cho macro setjmp() và hàm longjmp().
+
+Macro setjmp và hàm longjmp được sử dụng cùng nhau chủ yếu khi xử lý lỗi hay xử lý ngoại lệ. Có thể nói rằng, sử dụng kết hợp macro setjmp và hàm longjmp là một phiên bản go to mạnh mẽ hơn.Macro setjmp và hàm longjmp được sử dụng cùng nhau chủ yếu khi xử lý lỗi hay xử lý ngoại lệ. Có thể nói rằng, sử dụng kết hợp macro setjmp và hàm longjmp là một phiên bản go to mạnh mẽ hơn.
+
+throw: Một chương trình ném một Exception khi một vấn đề xuất hiện. Việc này được thực hiện bởi sử dụng từ khóa throw trong C++.
+
+catch: Một chương trình bắt một Exception với một Exception Handler tại vị trí trong một chương trình nơi bạn muốn xử lý vấn đề đó. Từ khóa catch trong C++ chỉ dẫn việc bắt một exception.
+
+try: Một khối try có thể được bắt bởi một số lượng cụ thể exception. Nó được theo sau bởi một hoặc nhiều khối catch.
+
+
 
 
