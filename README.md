@@ -256,7 +256,7 @@ do đó kết quả cuối cùng là: 0 0 2 0 4
         + Kích thước của union sẽ là kích thước của member lớn nhất;
         + Các member trong Union đều dùng chung một địa chỉ nên khi thay đổi một giá trị member thì sẽ ảnh hưởng đến giá trị các member khác
         
-#bai 7
+#bài 7
 
 biến : jmp_buf.
 Đây là một kiểu mảng được sử dụng để giữ thông tin cho macro setjmp() và hàm longjmp().
@@ -269,6 +269,19 @@ catch: Một chương trình bắt một Exception với một Exception Handler
 
 try: Một khối try có thể được bắt bởi một số lượng cụ thể exception. Nó được theo sau bởi một hoặc nhiều khối catch.
 
+#bài 8 : pointer
+
+Trong bài này chúng ta sẽ tìm hiểu về con trỏ (pointer) trong ngôn ngữ lập trình C: Con trỏ là gì, cách sử dụng nó như thế nào, cách biểu diễn trong ngôn ngữ C, và các bài tập thực hành.
+
+Con trỏ là một tính năng nâng cao rất hay của ngôn ngữ lập trình C/C++, nó giúp ta xử lý các bài toán về danh sách liên kết và có thể thay thế cho mảng trong một số trường hợp.
+
+Khi bạn khai báo một biến var với kiểu dữ liệu int thì trình biên dịch sẽ gắn biến var đó tới một địa chỉ trong bộ nhớ, địa chỉ này sinh ra ngẫu nhiên và có đồ dài bằng với kiểu dữ liệu của biến.
+
+Con trỏ (pointer) là một biến đặc biệt, dùng để lưu trữ địa chỉ lưu trữ chứ không phải là giá trị như biến thông thường.
+
+Khai báo con trỏ: Để khai báo biến con trỏ thì ta sử dụng ký tự sao (*) dặt phía trước tên biến.
+
+kỹ thuật 2 con trỏ : https://devera.vn/blog/our-blog-1/post/thuat-toan-trong-lap-trinh-phan-3-two-pointer-va-sliding-window-71
 
 
 
