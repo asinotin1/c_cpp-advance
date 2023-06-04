@@ -283,5 +283,46 @@ Khai báo con trỏ: Để khai báo biến con trỏ thì ta sử dụng ký t�
 
 kỹ thuật 2 con trỏ : https://devera.vn/blog/our-blog-1/post/thuat-toan-trong-lap-trinh-phan-3-two-pointer-va-sliding-window-71
 
+#bài 10: linked list
 
+Trong ngôn ngữ lập trình C, một danh sách liên kết (linked list) là một cấu trúc dữ liệu được sử dụng để lưu trữ một tập hợp các phần tử có thể thay đổi kích thước trong khi chương trình đang chạy. Danh sách liên kết bao gồm một chuỗi các nút (node), mỗi nút chứa một giá trị và một con trỏ (pointer) đến nút tiếp theo trong danh sách. Vì vậy, danh sách liên kết có thể được xem như một chuỗi các "hộp" được nối với nhau bởi các con trỏ.
 
+Để tạo một danh sách liên kết trong C, ta cần định nghĩa một cấu trúc dữ liệu gồm hai thành phần: giá trị và con trỏ. Ví dụ, đoạn mã sau định nghĩa một cấu trúc dữ liệu để lưu trữ một số nguyên và một con trỏ đến nút tiếp theo:
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+Sau đó, để tạo ra một danh sách liên kết, ta sử dụng các toán tử cấp phát bộ nhớ động như malloc() để tạo ra các nút mới và sử dụng các con trỏ để liên kết các nút lại với nhau. Ví dụ, đoạn mã sau tạo ra một danh sách liên kết đơn giản gồm ba nút chứa các giá trị 1, 2 và 3:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+int main() {
+    struct Node* head = NULL;
+    struct Node* second = NULL;
+    struct Node* third = NULL;
+
+    head = (struct Node*)malloc(sizeof(struct Node));
+    second = (struct Node*)malloc(sizeof(struct Node));
+    third = (struct Node*)malloc(sizeof(struct Node));
+
+    head->data = 1;
+    head->next = second;
+
+    second->data = 2;
+    second->next = third;
+
+    third->data = 3;
+    third->next = NULL;
+
+    return 0;
+}
+
+Trong đoạn mã trên, ta đầu tiên định nghĩa ba con trỏ head, second và third để lưu trữ ba nút của danh sách liên kết. Sau đó, ta sử dụng malloc() để cấp phát bộ nhớ động cho các nút và gán địa chỉ của chúng cho các con trỏ tương ứng. Cuối cùng, ta gán giá trị và con trỏ của từng nút để liên kết chúng với nhau và tạo ra danh sách liên kết hoàn chỉnh.
