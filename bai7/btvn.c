@@ -1,28 +1,26 @@
 #include<stdio.h>
 #include<string.h>
+#include <ctype.h>
 void nhapten()
 {
-    
-    char ten[20];
-    int linh_canh=0;
-     vi_tri_ten:
-    printf("\nnhap ten:");
-    fgets(ten,sizeof(ten),stdin);
-     for(int i=0;i<strlen(ten);i++)
-     {
-        if(ten[i]<65||ten[i]>90)
-        {
-            linh_canh=1;
-            break;
+     char name[100];
+    while (1) {
+        printf("Nhap ten cua ban: ");
+        scanf("%s", name);
+        int valid = 1;
+        for (int i = 0; i < strlen(name); i++) {
+            if (!isalpha(name[i]) || !islower(name[i])) {
+                valid = 0;
+                break;
+            }
         }
-     }
-     if(linh_canh==1)
-     {
-        printf("\nten ban nhap khong hop le ");
-        goto vi_tri_ten;
-     }
-     printf("ten ban nhap la:");
-     puts(ten);
+        if (valid==1) {
+            printf("Chao mung %s den voi chuong trinh cua chung toi!\n", name);
+            break;
+        } else {
+            printf("Ten cua ban khong hop le. Vui long nhap lai.\n");
+        }
+    }
 }
 int nhaptuoi()
 {
