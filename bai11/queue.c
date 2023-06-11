@@ -96,7 +96,7 @@ int8_t rear(Queues *queue)
 }
 
 // trả về kích thước hàng đợi
-int8_t size(Queues *queue)
+uint8_t size(Queues *queue)
 {
     if (isEmpty(queue))
     {
