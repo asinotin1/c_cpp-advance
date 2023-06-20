@@ -45,7 +45,7 @@ public:
         return this->trungbinh;
     }
     void setTrungbinh() {
-        this->trungbinh = (this->toan + this->ly + this->hoa) / 3;
+     this->trungbinh = (this->getToan() + this->getLy() + this->getHoa()) / 3;
     }
     void xuatthongtin()
     {
