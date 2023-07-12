@@ -687,3 +687,26 @@ kĩ thuật duyệt( for cải tiến) qua các phần tử:
 
 Các địa chỉ trong vector sẽ được gán cho ten_bien và in ra cho đến hết các phần tử trong vector.
 
+# BÀI17_LIST_MAP
+
+### 1.list
+Sử dụng thư viện: include< list >
+
+list giống vector về các hàm, nhưng khác về cách hoạt động, phần vùng địa chỉ vì địa chỉ của list không phải là các giá trị liền kề nhau.
+### 2.map
+
+Trong c++ có kiểu dữ liệu **auto**: là kiểu dữ liệu mà căn cứ vào giá trị đằng sau để tự động chọn kiểu dữ liệu phù hợp
+>auto 100; // tự động chọn kiểu dữ liệu int
+
+Sử dụng thư viện: include< map >;
+
+Map lưu các cặp key-value, các phần tử trong map sẽ là các cặp key-value. các key sẽ phải là duy nhất và value có thể lặp lại được.
+
+Cú pháp: **map <kiểu dữ liệu 1, kiểu dữ liệu 2> ten_map;**
+- kiểu dữ liệu 1 thể hiện **key**, kiểu dữ liệu 2 thể hiện **value**.
+
+có 3 phương thức chính: 
+- Thêm 1 cặp key-value;
+- Truy suất một giá trị thông qua key;
+- Xóa một cặp key-value khỏi map;
+
