@@ -1,5 +1,6 @@
 /*bit filed : giúp chúng ta tiết kiệm số byte trong 1 struct */
 // ví dụ trong struct test 1 : ta chỉ tốn 4 bit trong 1 struct vì nó lấy kiểu dữ liệu dầu tiên của biến trong struct
+// bit filed : thường rất ít khi sử dụng và chỉ dùng trong các cờ trong class và không quá quan trọng
 #include <stdio.h>
  
 // A structure without forced alignment
